@@ -45,20 +45,6 @@ p {
     margin: 0.2em auto;
 }
 
-.shrank {
-    font-size: 10px;
-    margin-top: -0.25em;
-}
-
-.packed {
-   letter-spacing: -0.35em;
-   margin-bottom: -0.3em;
-}
-
-.center {
-   text-align: center;
-}
-
 hr {
     border: none;
     background-color: lightgray;
@@ -80,6 +66,43 @@ td {
   padding: 1px;
 }
 
+
+
 #mainLeft {
     border-right: 1px solid lightgray;
 }
+
+
+
+.shrank {
+    font-size: 10px;
+}
+
+.packed {
+   letter-spacing: -0.35em;
+   margin-bottom: -0.3em;
+}
+
+.desc {
+    margin-top: -0.3em;
+    margin-left: 1em;
+}
+
+.center {
+   text-align: center;
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 2em;
+}
+
+.tbl_vids {
+    text-align: center;
+}
+
+.tbl_vids_img {
+    text-align: center;
+}
+
