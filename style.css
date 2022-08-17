@@ -108,6 +108,7 @@ img {
 }
 
 .tbl_art_pic {
+    height: 130px;
     object-fit: contain;
 }
 
