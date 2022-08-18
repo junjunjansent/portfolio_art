@@ -1,13 +1,13 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
-    max-width: 960px;
+    max-width: 80%;
     margin: auto;
 }
 
 h1 {
     font-size: 3em;
-    letter-spacing: .3em;
+    letter-spacing: .4em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -67,15 +67,16 @@ td {
 }
 
 img {
-    width: 90%;
+    width: 100%;
 }
 
-
+/* ID Properties */
 
 #mainLeft {
     border-right: 1px solid lightgray;
 }
 
+/* Class Properties */
 
 
 .shrank {
@@ -85,6 +86,16 @@ img {
 .packed {
    letter-spacing: -0.35em;
    margin-bottom: -0.3em;
+}
+
+.spread {
+    letter-spacing: .3em;
+}
+
+.h1_desc {
+    text-align: right;
+    margin-top: -0.3em;
+    margin-left: 1em;
 }
 
 .desc {
@@ -110,5 +121,72 @@ img {
 .tbl_art_pic {
     height: 130px;
     object-fit: contain;
+}
+
+.btn_vids {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 2px;
+    color: rgb(142, 140, 140);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    padding: 6px;
+    margin: 2px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    font-style: none;
+    line-height: 1.8em;
+    letter-spacing: 0.1em;
+
+    position: relative;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn_vids:hover {
+    color: rgb(142, 140, 140);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.6);
+    padding: 2px;
+    margin: 1px;
+    line-height: 1.4em;
+}
+
+.btn_overlay{
+    background-color: rgba(0,0,0,0.6);
+    border: none;
+    border-radius: 2px;
+    color: whitesmoke;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.btn_overlay > * {
+    transition-duration: 0.2s;
+    transform: translateY(20px);
+}
+
+.btn_overlay:hover{
+    backdrop-filter: blur(5px);
+    opacity: 1;
+}
+
+.btn_overlay:hover > * {
+    transform: translateY(0px);
+}
+
+.btn_overlay_desc{
+    padding: 6px;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 1.1em;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
